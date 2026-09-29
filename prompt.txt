@@ -1,0 +1,28 @@
+Build a **production-ready Healthcare Website in Angular** strictly matching the attached **Desktop, Tablet, and Mobile screenshots**.
+
+- Treat the screenshots as the **absolute visual source of truth**. Do not redesign or approximate the UI.
+- **Create a separate Angular standalone component for every major Home Page section**: Header, Hero, Search, Features, Services, Featured Doctors, Nearby Healthcare, Health Tips, Testimonials, Mobile App Promotion, and Footer. Do not implement the entire page as one component.
+- Use **Atomic Design**, Signals, strict TypeScript, Reactive Forms, SCSS, and typed models/services.
+- **Tablet must retain the Desktop component/layout structure** with only responsive spacing, sizing, grid, and typography adjustments.
+- **Mobile must have a properly optimized mobile layout and functional hamburger/mobile navigation** based on the mobile screenshot.
+- Add **Angular routing for all main navigation items**. Each route must have its own page/component with a **common Header and Footer** and a body placeholder until the page is implemented.
+- Header and Footer must be **shared reusable components** and remain consistent across all routes.
+- Implement working navigation, mobile menu open/close, search, buttons, links, and other visible interactions.
+- Ensure **pixel-accurate UI**, responsive behavior, WCAG 2.2 AA, SEO, performance, keyboard accessibility, and loading/error/empty states.
+- Keep business/mock data outside templates in typed services/models.
+- Implement **unit and integration tests first**.
+- **After integration tests pass, run the Angular project and validate the actual rendered UI.**
+- Configure and run **Playwright E2E tests** for Desktop, Tablet, and Mobile.
+- Capture screenshots at each viewport and **compare them against the attached screenshots**.
+- Fix all visual differences including **layout, spacing, typography, colors, images, card sizes, alignment, navigation, and responsive behavior**, then repeat validation.
+- Do not consider the task complete if the UI does not closely match the attached screenshots or if sections are not implemented as separate components.
+**Workflow:**
+**Analyze Screenshots → Component Architecture → Implement Sections → Routing → Unit Tests → Integration Tests → Run Project → Playwright E2E → Screenshot Comparison → Visual Refinement → Accessibility/SEO Review → Final Validation**
+
+Mobile header and footer not matching the UI. Please check the mobile screenshot. not matching header footer
+Add header and footer for all other pages
+
+Container max-width:1440, all background colour should be full width
+
+---------------------
+Review the Angular application at `E:\Orchestrator\HealthCare003`. Assess its architecture, security, performance, accessibility, SCSS, and tests. Playwright E2E review is mandatory: run the existing critical journey tests and report the commands, browser and viewport coverage, results, and any gaps. Give evidence-based findings and actionable recommendations without changing application code. Save the complete review as `ANGULAR_CODE_REVIEW_REPORT.md` in the repository root.
