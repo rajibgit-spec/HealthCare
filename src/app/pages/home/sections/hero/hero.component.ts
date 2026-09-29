@@ -1,0 +1,5 @@
+import { Component } from '@angular/core';
+import { SearchComponent } from '../../../../shared/search/search.component';
+
+@Component({ selector: 'app-hero', standalone: true, imports: [SearchComponent], template: `<section class="hero"><div class="hero-copy"><span class="eyebrow">Better health. A brighter tomorrow.</span><h1>Your Health<br><em>Our Priority</em></h1><p>Get expert medical advice, find the right specialist, book appointments and take control of your health - all in one place.</p><app-search /></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=75" srcset="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=640&q=70 640w, https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=75 900w" sizes="(max-width: 640px) 100vw, 53vw" alt="Smiling doctor ready to help" width="900" height="560" fetchpriority="high" decoding="async"></div></section>` })
+export class HeroComponent {}
